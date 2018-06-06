@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="collectBtn" destination="21D-dZ-F0B" id="Nyv-Sy-fwP"/>
+                <outletCollection property="collectBtn" destination="cdj-me-QoH" id="PlL-bX-yTH"/>
+                <outletCollection property="collectBtn" destination="0K4-ja-xWa" id="kHf-TS-aRW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お支度ボードアプリ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWz-BE-sfe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wK3-SD-Duc">
+                    <rect key="frame" x="0.0" y="92" width="375" height="575"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21D-dZ-F0B">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="191.5"/>
+                            <state key="normal" title="おはようの支度" image="bed_girl_wake.png"/>
+                            <connections>
+                                <action selector="touchBtn:" destination="-1" eventType="touchUpInside" id="1Yc-Os-e33"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdj-me-QoH">
+                            <rect key="frame" x="0.0" y="191.5" width="375" height="192"/>
+                            <state key="normal" title="おかえりの支度" image="home_kitaku_girl.png"/>
+                            <connections>
+                                <action selector="touchBtn:" destination="-1" eventType="touchUpInside" id="2VY-Mb-CPI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0K4-ja-xWa">
+                            <rect key="frame" x="0.0" y="383.5" width="375" height="191.5"/>
+                            <inset key="titleEdgeInsets" minX="-20" minY="30" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="40" minY="-20" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="おやすみの支度" image="family_bed_kawanoji.png"/>
+                            <connections>
+                                <action selector="touchBtn:" destination="-1" eventType="touchUpInside" id="1tC-Oz-HIs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="575" id="Dhj-X5-BoH"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sWz-BE-sfe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IMk-Xs-lzN"/>
+                <constraint firstItem="wK3-SD-Duc" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="MnI-Vh-ulM"/>
+                <constraint firstItem="sWz-BE-sfe" firstAttribute="trailing" secondItem="wK3-SD-Duc" secondAttribute="trailing" id="O86-Zt-kA6"/>
+                <constraint firstAttribute="bottom" secondItem="wK3-SD-Duc" secondAttribute="bottom" id="TZG-aN-8fW"/>
+                <constraint firstItem="wK3-SD-Duc" firstAttribute="top" secondItem="sWz-BE-sfe" secondAttribute="bottom" constant="17" id="dGh-iB-f5S"/>
+                <constraint firstItem="sWz-BE-sfe" firstAttribute="leading" secondItem="wK3-SD-Duc" secondAttribute="leading" id="ioB-e9-Red"/>
+                <constraint firstItem="wK3-SD-Duc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yVy-GG-oDn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="13.5" y="161.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bed_girl_wake.png" width="373" height="400"/>
+        <image name="family_bed_kawanoji.png" width="392" height="450"/>
+        <image name="home_kitaku_girl.png" width="358" height="400"/>
+    </resources>
+</document>
