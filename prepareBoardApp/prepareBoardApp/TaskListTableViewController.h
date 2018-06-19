@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TaskListDetailTableViewCell.h"
+@interface TaskListTableViewController : UITableViewController<TaskListDetailTableViewCellDelegate>
 
-@interface TaskListTableViewController : UITableViewController
 @property (nonatomic)  NSMutableArray *prepareActionArry;
+@property (weak,nonatomic)  NSMutableArray *prepareActionHeaderSectionArry;
+@property(strong,nonatomic)TaskListDetailTableViewCell *detailCell;
 @end

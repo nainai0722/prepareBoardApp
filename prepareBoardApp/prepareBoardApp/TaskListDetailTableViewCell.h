@@ -8,12 +8,26 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
-
-@interface TaskListDetailTableViewCell : UITableViewCell
+#import "TaskListDetailTableViewCell.h"
+@protocol TaskListDetailTableViewCellDelegate<NSObject>;
+@optional
+-(void)addPrepareActionForList:(UITableViewCell*)detailCell :(BOOL)isAdd;//add 1 delete 0
+-(void)editPrepareActionForList:(UITableViewCell*)detailCell;
+@end
+@interface TaskListDetailTableViewCell : UITableViewCell{
+    BOOL isAddAction;
+}
 @property (weak, nonatomic) IBOutlet UILabel *HeaderLabel;
 @property (weak, nonatomic) IBOutlet UIButton *AddBtn;
 @property (weak, nonatomic) IBOutlet UIButton *DeleteBtn;
 @property (weak, nonatomic)  NSDictionary *info;
 @property (nonatomic)  NSMutableArray *prepareActionList;
+@property (weak, nonatomic) IBOutlet UIImageView *cellTaskImage;
+/**
+ delegateオブジェクト
+ */
+@property (weak, nonatomic) id <TaskListDetailTableViewCellDelegate> delegate;
 
 @end
+
+

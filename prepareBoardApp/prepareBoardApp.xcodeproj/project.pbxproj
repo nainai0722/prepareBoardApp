@@ -53,6 +53,39 @@
 		18776FA720C6F51C001921EB /* sentaku_kago.png in Resources */ = {isa = PBXBuildFile; fileRef = 18776F9A20C6F51C001921EB /* sentaku_kago.png */; };
 		18776FA820C6F51C001921EB /* sentaku_kago.png in Resources */ = {isa = PBXBuildFile; fileRef = 18776F9A20C6F51C001921EB /* sentaku_kago.png */; };
 		18776FA920C6F51C001921EB /* sentaku_kago.png in Resources */ = {isa = PBXBuildFile; fileRef = 18776F9A20C6F51C001921EB /* sentaku_kago.png */; };
+		187F9CE520D021100007CC5F /* book_renrakuchou.png in Resources */ = {isa = PBXBuildFile; fileRef = 187F9CE220D021100007CC5F /* book_renrakuchou.png */; };
+		187F9CE620D021100007CC5F /* book_renrakuchou.png in Resources */ = {isa = PBXBuildFile; fileRef = 187F9CE220D021100007CC5F /* book_renrakuchou.png */; };
+		187F9CE720D021100007CC5F /* book_renrakuchou.png in Resources */ = {isa = PBXBuildFile; fileRef = 187F9CE220D021100007CC5F /* book_renrakuchou.png */; };
+		187F9CE820D021100007CC5F /* bluebird_baka.png in Resources */ = {isa = PBXBuildFile; fileRef = 187F9CE320D021100007CC5F /* bluebird_baka.png */; };
+		187F9CE920D021100007CC5F /* bluebird_baka.png in Resources */ = {isa = PBXBuildFile; fileRef = 187F9CE320D021100007CC5F /* bluebird_baka.png */; };
+		187F9CEA20D021100007CC5F /* bluebird_baka.png in Resources */ = {isa = PBXBuildFile; fileRef = 187F9CE320D021100007CC5F /* bluebird_baka.png */; };
+		187F9CEB20D021100007CC5F /* ehon_hahako.png in Resources */ = {isa = PBXBuildFile; fileRef = 187F9CE420D021100007CC5F /* ehon_hahako.png */; };
+		187F9CEC20D021100007CC5F /* ehon_hahako.png in Resources */ = {isa = PBXBuildFile; fileRef = 187F9CE420D021100007CC5F /* ehon_hahako.png */; };
+		187F9CED20D021100007CC5F /* ehon_hahako.png in Resources */ = {isa = PBXBuildFile; fileRef = 187F9CE420D021100007CC5F /* ehon_hahako.png */; };
+		1883C33A20C97A770042874F /* NSAttributedString+img.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C33920C97A770042874F /* NSAttributedString+img.m */; };
+		1883C33B20C97A770042874F /* NSAttributedString+img.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C33920C97A770042874F /* NSAttributedString+img.m */; };
+		1883C33C20C97A770042874F /* NSAttributedString+img.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C33920C97A770042874F /* NSAttributedString+img.m */; };
+		1883C33F20C97CF80042874F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1883C33E20C97CF80042874F /* UIKit.framework */; };
+		1883C34020C981260042874F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1883C33E20C97CF80042874F /* UIKit.framework */; };
+		1883C34120C981270042874F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1883C33E20C97CF80042874F /* UIKit.framework */; };
+		1883C34420CEAC010042874F /* kouen_oyako.png in Resources */ = {isa = PBXBuildFile; fileRef = 1883C34220CEAC000042874F /* kouen_oyako.png */; };
+		1883C34520CEAC010042874F /* kouen_oyako.png in Resources */ = {isa = PBXBuildFile; fileRef = 1883C34220CEAC000042874F /* kouen_oyako.png */; };
+		1883C34620CEAC010042874F /* kouen_oyako.png in Resources */ = {isa = PBXBuildFile; fileRef = 1883C34220CEAC000042874F /* kouen_oyako.png */; };
+		1883C34720CEAC010042874F /* shopping_supermarket_family_mother.png in Resources */ = {isa = PBXBuildFile; fileRef = 1883C34320CEAC000042874F /* shopping_supermarket_family_mother.png */; };
+		1883C34820CEAC010042874F /* shopping_supermarket_family_mother.png in Resources */ = {isa = PBXBuildFile; fileRef = 1883C34320CEAC000042874F /* shopping_supermarket_family_mother.png */; };
+		1883C34920CEAC010042874F /* shopping_supermarket_family_mother.png in Resources */ = {isa = PBXBuildFile; fileRef = 1883C34320CEAC000042874F /* shopping_supermarket_family_mother.png */; };
+		1883C34B20CEAC7F0042874F /* player_button08_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1883C34A20CEAC7F0042874F /* player_button08_plus.png */; };
+		1883C34C20CEAC7F0042874F /* player_button08_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1883C34A20CEAC7F0042874F /* player_button08_plus.png */; };
+		1883C34D20CEAC7F0042874F /* player_button08_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1883C34A20CEAC7F0042874F /* player_button08_plus.png */; };
+		1883C35120CEAEF90042874F /* addOriginalTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C34F20CEAEF90042874F /* addOriginalTaskViewController.m */; };
+		1883C35220CEAEF90042874F /* addOriginalTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C34F20CEAEF90042874F /* addOriginalTaskViewController.m */; };
+		1883C35320CEAEF90042874F /* addOriginalTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C34F20CEAEF90042874F /* addOriginalTaskViewController.m */; };
+		1883C35420CEAEF90042874F /* addOriginalTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1883C35020CEAEF90042874F /* addOriginalTaskViewController.xib */; };
+		1883C35520CEAEF90042874F /* addOriginalTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1883C35020CEAEF90042874F /* addOriginalTaskViewController.xib */; };
+		1883C35620CEAEF90042874F /* addOriginalTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1883C35020CEAEF90042874F /* addOriginalTaskViewController.xib */; };
+		1883C35820CEBAED0042874F /* text_kakko_kari.png in Resources */ = {isa = PBXBuildFile; fileRef = 1883C35720CEBAED0042874F /* text_kakko_kari.png */; };
+		1883C35920CEBAED0042874F /* text_kakko_kari.png in Resources */ = {isa = PBXBuildFile; fileRef = 1883C35720CEBAED0042874F /* text_kakko_kari.png */; };
+		1883C35A20CEBAED0042874F /* text_kakko_kari.png in Resources */ = {isa = PBXBuildFile; fileRef = 1883C35720CEBAED0042874F /* text_kakko_kari.png */; };
 		188FC28020C5910A00DEC190 /* TaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FC27E20C5910A00DEC190 /* TaskListTableViewController.m */; };
 		188FC28120C5910A00DEC190 /* TaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FC27E20C5910A00DEC190 /* TaskListTableViewController.m */; };
 		188FC28220C5910A00DEC190 /* TaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FC27E20C5910A00DEC190 /* TaskListTableViewController.m */; };
@@ -131,6 +164,19 @@
 		18776F9820C6F51C001921EB /* kutsu_nugu_good.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kutsu_nugu_good.png; sourceTree = "<group>"; };
 		18776F9920C6F51C001921EB /* tearai_hand_suidou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tearai_hand_suidou.png; sourceTree = "<group>"; };
 		18776F9A20C6F51C001921EB /* sentaku_kago.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sentaku_kago.png; sourceTree = "<group>"; };
+		187F9CE220D021100007CC5F /* book_renrakuchou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_renrakuchou.png; sourceTree = "<group>"; };
+		187F9CE320D021100007CC5F /* bluebird_baka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluebird_baka.png; sourceTree = "<group>"; };
+		187F9CE420D021100007CC5F /* ehon_hahako.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ehon_hahako.png; sourceTree = "<group>"; };
+		1883C33820C97A770042874F /* NSAttributedString+img.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+img.h"; sourceTree = "<group>"; };
+		1883C33920C97A770042874F /* NSAttributedString+img.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+img.m"; sourceTree = "<group>"; };
+		1883C33E20C97CF80042874F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1883C34220CEAC000042874F /* kouen_oyako.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kouen_oyako.png; sourceTree = "<group>"; };
+		1883C34320CEAC000042874F /* shopping_supermarket_family_mother.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopping_supermarket_family_mother.png; sourceTree = "<group>"; };
+		1883C34A20CEAC7F0042874F /* player_button08_plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_button08_plus.png; sourceTree = "<group>"; };
+		1883C34E20CEAEF90042874F /* addOriginalTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = addOriginalTaskViewController.h; path = prepareBoardApp/addOriginalTaskViewController.h; sourceTree = SOURCE_ROOT; };
+		1883C34F20CEAEF90042874F /* addOriginalTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = addOriginalTaskViewController.m; path = prepareBoardApp/addOriginalTaskViewController.m; sourceTree = SOURCE_ROOT; };
+		1883C35020CEAEF90042874F /* addOriginalTaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = addOriginalTaskViewController.xib; path = prepareBoardApp/addOriginalTaskViewController.xib; sourceTree = SOURCE_ROOT; };
+		1883C35720CEBAED0042874F /* text_kakko_kari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text_kakko_kari.png; sourceTree = "<group>"; };
 		188FC27D20C5910A00DEC190 /* TaskListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskListTableViewController.h; sourceTree = "<group>"; };
 		188FC27E20C5910A00DEC190 /* TaskListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskListTableViewController.m; sourceTree = "<group>"; };
 		188FC27F20C5910A00DEC190 /* TaskListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskListTableViewController.xib; sourceTree = "<group>"; };
@@ -151,6 +197,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1883C33F20C97CF80042874F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1883C34020C981260042874F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1883C34120C981270042874F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +228,7 @@
 				1835E15520C2CDF500C1F0E7 /* prepareBoardAppTests */,
 				1835E16020C2CDF500C1F0E7 /* prepareBoardAppUITests */,
 				1835E13B20C2CDED00C1F0E7 /* Products */,
+				1883C33D20C97CF80042874F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +245,9 @@
 		1835E13C20C2CDED00C1F0E7 /* prepareBoardApp */ = {
 			isa = PBXGroup;
 			children = (
+				1883C34E20CEAEF90042874F /* addOriginalTaskViewController.h */,
+				1883C34F20CEAEF90042874F /* addOriginalTaskViewController.m */,
+				1883C35020CEAEF90042874F /* addOriginalTaskViewController.xib */,
 				1835E13D20C2CDED00C1F0E7 /* AppDelegate.h */,
 				1835E13E20C2CDED00C1F0E7 /* AppDelegate.m */,
 				18D6CF0720C8320E00F842F5 /* TopViewController.h */,
@@ -206,6 +259,8 @@
 				188FC28620C5923700DEC190 /* TaskListDetailTableViewCell.h */,
 				188FC28720C5923700DEC190 /* TaskListDetailTableViewCell.m */,
 				188FC28820C5923700DEC190 /* TaskListDetailTableViewCell.xib */,
+				1883C33820C97A770042874F /* NSAttributedString+img.h */,
+				1883C33920C97A770042874F /* NSAttributedString+img.m */,
 				1835E14020C2CDED00C1F0E7 /* ViewController.h */,
 				1835E14120C2CDED00C1F0E7 /* ViewController.m */,
 				1835E16F20C2CE8E00C1F0E7 /* ViewController.xib */,
@@ -246,6 +301,13 @@
 		1835E17420C2D1DB00C1F0E7 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				187F9CE320D021100007CC5F /* bluebird_baka.png */,
+				187F9CE220D021100007CC5F /* book_renrakuchou.png */,
+				187F9CE420D021100007CC5F /* ehon_hahako.png */,
+				1883C35720CEBAED0042874F /* text_kakko_kari.png */,
+				1883C34A20CEAC7F0042874F /* player_button08_plus.png */,
+				1883C34220CEAC000042874F /* kouen_oyako.png */,
+				1883C34320CEAC000042874F /* shopping_supermarket_family_mother.png */,
 				18D6CF1020C834F100F842F5 /* bed_girl_wake.png */,
 				18D6CF1120C834F100F842F5 /* family_bed_kawanoji.png */,
 				18D6CF1220C834F100F842F5 /* home_kitaku_girl.png */,
@@ -264,6 +326,14 @@
 				1835E17B20C2D1DB00C1F0E7 /* ensoku_goods.png */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		1883C33D20C97CF80042874F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1883C33E20C97CF80042874F /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,15 +439,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187F9CE520D021100007CC5F /* book_renrakuchou.png in Resources */,
+				1883C35420CEAEF90042874F /* addOriginalTaskViewController.xib in Resources */,
 				18776FA420C6F51C001921EB /* tearai_hand_suidou.png in Resources */,
 				1835E14A20C2CDF500C1F0E7 /* LaunchScreen.storyboard in Resources */,
 				1835E18820C2D1DB00C1F0E7 /* toiletKid.png in Resources */,
 				1835E17C20C2D1DB00C1F0E7 /* family_hamigaki_shiage.png in Resources */,
+				1883C34420CEAC010042874F /* kouen_oyako.png in Resources */,
 				1835E17020C2CE8E00C1F0E7 /* ViewController.xib in Resources */,
 				18776FA720C6F51C001921EB /* sentaku_kago.png in Resources */,
+				187F9CE820D021100007CC5F /* bluebird_baka.png in Resources */,
 				18E87B3020C2E80F00D289EB /* hanko_taihenyokudekimashita.png in Resources */,
 				18D6CF1920C834F100F842F5 /* home_kitaku_girl.png in Resources */,
 				188FC28C20C5923700DEC190 /* TaskListDetailTableViewCell.xib in Resources */,
+				187F9CEB20D021100007CC5F /* ehon_hahako.png in Resources */,
+				1883C34720CEAC010042874F /* shopping_supermarket_family_mother.png in Resources */,
+				1883C34B20CEAC7F0042874F /* player_button08_plus.png in Resources */,
 				18D6CF1620C834F100F842F5 /* family_bed_kawanoji.png in Resources */,
 				1835E18520C2D1DB00C1F0E7 /* pet_toilet_sheet_dog.png in Resources */,
 				1835E18E20C2D1DB00C1F0E7 /* ensoku_goods.png in Resources */,
@@ -389,6 +466,7 @@
 				18D6CF1320C834F100F842F5 /* bed_girl_wake.png in Resources */,
 				1835E18220C2D1DB00C1F0E7 /* food_gohan.png in Resources */,
 				188FC28320C5910A00DEC190 /* TaskListTableViewController.xib in Resources */,
+				1883C35820CEBAED0042874F /* text_kakko_kari.png in Resources */,
 				18D6CF0D20C8320E00F842F5 /* TopViewController.xib in Resources */,
 				1835E18B20C2D1DB00C1F0E7 /* mushiyoke.png in Resources */,
 			);
@@ -400,19 +478,27 @@
 			files = (
 				188FC28420C5910A00DEC190 /* TaskListTableViewController.xib in Resources */,
 				18776FA520C6F51C001921EB /* tearai_hand_suidou.png in Resources */,
+				187F9CE620D021100007CC5F /* book_renrakuchou.png in Resources */,
+				187F9CEC20D021100007CC5F /* ehon_hahako.png in Resources */,
 				18776F9F20C6F51C001921EB /* pet_oyatsu_dog.png in Resources */,
 				1835E18620C2D1DB00C1F0E7 /* pet_toilet_sheet_dog.png in Resources */,
+				1883C34820CEAC010042874F /* shopping_supermarket_family_mother.png in Resources */,
+				187F9CE920D021100007CC5F /* bluebird_baka.png in Resources */,
+				1883C34C20CEAC7F0042874F /* player_button08_plus.png in Resources */,
 				1835E18920C2D1DB00C1F0E7 /* toiletKid.png in Resources */,
 				188FC28D20C5923700DEC190 /* TaskListDetailTableViewCell.xib in Resources */,
 				1835E18020C2D1DB00C1F0E7 /* kigaeGirl.png in Resources */,
+				1883C34520CEAC010042874F /* kouen_oyako.png in Resources */,
 				18D6CF1720C834F100F842F5 /* family_bed_kawanoji.png in Resources */,
 				18D6CF1420C834F100F842F5 /* bed_girl_wake.png in Resources */,
 				1835E18F20C2D1DB00C1F0E7 /* ensoku_goods.png in Resources */,
 				1835E18320C2D1DB00C1F0E7 /* food_gohan.png in Resources */,
+				1883C35520CEAEF90042874F /* addOriginalTaskViewController.xib in Resources */,
 				1835E17120C2CE8E00C1F0E7 /* ViewController.xib in Resources */,
 				18776F9C20C6F51C001921EB /* ojigi_girl.png in Resources */,
 				18D6CF1A20C834F100F842F5 /* home_kitaku_girl.png in Resources */,
 				18776FA220C6F51C001921EB /* kutsu_nugu_good.png in Resources */,
+				1883C35920CEBAED0042874F /* text_kakko_kari.png in Resources */,
 				18E87B3120C2E80F00D289EB /* hanko_taihenyokudekimashita.png in Resources */,
 				18D6CF0E20C8320E00F842F5 /* TopViewController.xib in Resources */,
 				1835E18C20C2D1DB00C1F0E7 /* mushiyoke.png in Resources */,
@@ -427,19 +513,27 @@
 			files = (
 				188FC28520C5910A00DEC190 /* TaskListTableViewController.xib in Resources */,
 				18776FA620C6F51C001921EB /* tearai_hand_suidou.png in Resources */,
+				187F9CE720D021100007CC5F /* book_renrakuchou.png in Resources */,
+				187F9CED20D021100007CC5F /* ehon_hahako.png in Resources */,
 				18776FA020C6F51C001921EB /* pet_oyatsu_dog.png in Resources */,
 				1835E18720C2D1DB00C1F0E7 /* pet_toilet_sheet_dog.png in Resources */,
+				1883C34920CEAC010042874F /* shopping_supermarket_family_mother.png in Resources */,
+				187F9CEA20D021100007CC5F /* bluebird_baka.png in Resources */,
+				1883C34D20CEAC7F0042874F /* player_button08_plus.png in Resources */,
 				1835E18A20C2D1DB00C1F0E7 /* toiletKid.png in Resources */,
 				188FC28E20C5923700DEC190 /* TaskListDetailTableViewCell.xib in Resources */,
 				1835E18120C2D1DB00C1F0E7 /* kigaeGirl.png in Resources */,
+				1883C34620CEAC010042874F /* kouen_oyako.png in Resources */,
 				18D6CF1820C834F100F842F5 /* family_bed_kawanoji.png in Resources */,
 				18D6CF1520C834F100F842F5 /* bed_girl_wake.png in Resources */,
 				1835E19020C2D1DB00C1F0E7 /* ensoku_goods.png in Resources */,
 				1835E18420C2D1DB00C1F0E7 /* food_gohan.png in Resources */,
+				1883C35620CEAEF90042874F /* addOriginalTaskViewController.xib in Resources */,
 				1835E17220C2CE8E00C1F0E7 /* ViewController.xib in Resources */,
 				18776F9D20C6F51C001921EB /* ojigi_girl.png in Resources */,
 				18D6CF1B20C834F100F842F5 /* home_kitaku_girl.png in Resources */,
 				18776FA320C6F51C001921EB /* kutsu_nugu_good.png in Resources */,
+				1883C35A20CEBAED0042874F /* text_kakko_kari.png in Resources */,
 				18E87B3220C2E80F00D289EB /* hanko_taihenyokudekimashita.png in Resources */,
 				18D6CF0F20C8320E00F842F5 /* TopViewController.xib in Resources */,
 				1835E18D20C2D1DB00C1F0E7 /* mushiyoke.png in Resources */,
@@ -457,10 +551,12 @@
 			files = (
 				1835E14220C2CDED00C1F0E7 /* ViewController.m in Sources */,
 				1835E14D20C2CDF500C1F0E7 /* main.m in Sources */,
+				1883C35120CEAEF90042874F /* addOriginalTaskViewController.m in Sources */,
 				18D6CF0A20C8320E00F842F5 /* TopViewController.m in Sources */,
 				188FC28920C5923700DEC190 /* TaskListDetailTableViewCell.m in Sources */,
 				188FC28020C5910A00DEC190 /* TaskListTableViewController.m in Sources */,
 				1835E13F20C2CDED00C1F0E7 /* AppDelegate.m in Sources */,
+				1883C33A20C97A770042874F /* NSAttributedString+img.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +567,8 @@
 				18D6CF0B20C8320E00F842F5 /* TopViewController.m in Sources */,
 				188FC28120C5910A00DEC190 /* TaskListTableViewController.m in Sources */,
 				188FC28A20C5923700DEC190 /* TaskListDetailTableViewCell.m in Sources */,
+				1883C33B20C97A770042874F /* NSAttributedString+img.m in Sources */,
+				1883C35220CEAEF90042874F /* addOriginalTaskViewController.m in Sources */,
 				1835E15720C2CDF500C1F0E7 /* prepareBoardAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +580,8 @@
 				18D6CF0C20C8320E00F842F5 /* TopViewController.m in Sources */,
 				188FC28220C5910A00DEC190 /* TaskListTableViewController.m in Sources */,
 				188FC28B20C5923700DEC190 /* TaskListDetailTableViewCell.m in Sources */,
+				1883C33C20C97A770042874F /* NSAttributedString+img.m in Sources */,
+				1883C35320CEAEF90042874F /* addOriginalTaskViewController.m in Sources */,
 				1835E16220C2CDF500C1F0E7 /* prepareBoardAppUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

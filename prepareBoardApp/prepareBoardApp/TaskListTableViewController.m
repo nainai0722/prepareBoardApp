@@ -7,29 +7,44 @@
 //
 
 #import "TaskListTableViewController.h"
-#import "TaskListDetailTableViewCell.h"
 #import "ViewController.h"
+#import "NSAttributedString+img.h"
+#import "addOriginalTaskViewController.h"
 
-@interface TaskListTableViewController ()
+@interface TaskListTableViewController (){
+    BOOL isTouchBtn;
+    int _selfWidth;
+    int _selfHeight;
+}
 
 @end
 
 @implementation TaskListTableViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+//    self.detailCell = [TaskListDetailTableViewCell new];
+//    self.detailCell.delegate = self;
+     _prepareActionHeaderSectionArry = @[@"おはようの支度",@"おかえりの支度",@"おやすみの支度"];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    isTouchBtn = NO;
+//    self.detailCell = [TaskListDetailTableViewCell new];
+//    self.detailCell.delegate = self;
     self.prepareActionArry = [[NSMutableArray alloc] init];
     // カスタムセルを使用
     UINib *nib = [UINib nibWithNibName:@"TaskListDetailTableViewCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"Cell"];
-//    NSArray *arr = @[@{@"key":@"着替え"},@{@"key":@"歯磨き"},@{@"key":@"トイレ"}];
-    
+   
+    _selfWidth = self.view.frame.size.width;
+    _selfHeight = self.view.frame.size.height;
+    UIButton *footterBtn = [[UIButton alloc]initWithFrame:CGRectMake(0,_selfHeight*9/10, _selfWidth, _selfHeight*1/10)];
+    [footterBtn setTitle:@"TaskStart" forState:UIControlStateNormal];
+    [footterBtn setBackgroundColor:[UIColor redColor]];
+    [footterBtn addTarget:self action:@selector(touchTaskStartBtn:)
+     forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:footterBtn];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,6 +56,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //#warning Incomplete implementation, return the number of sections
+//    return [_prepareActionHeaderSectionArry count];
     return 3;
 }
 
@@ -52,36 +68,103 @@
     return 5;
 }
 
-
+-(UITableView *)tableView:(UITableView*)tableView titleForHeaderInSection:(NSInteger)section{
+    return _prepareActionHeaderSectionArry[section];
+}
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TaskListDetailTableViewCell" forIndexPath:indexPath];
-    
     // カスタムセルを取得
     TaskListDetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-//    NSArray *arr = @[@{@"key":@"着替え"},@{@"key":@"歯磨き"},@{@"key":@"トイレ"},@{@"key":@"朝ごはん"},@{@"key":@"虫除けスプレー"},@{@"key":@"はろくんご飯"},@{@"key":@"荷物準備"},@{@"key":@"靴"},@{@"key":@"帽子"}];
-    NSArray *arr = @[@[@{@"key":@"着替え"},@{@"key":@"歯磨き"},@{@"key":@"トイレ"},@{@"key":@"朝ごはん"},@{@"key":@"虫除けスプレー"}],@[@{@"key":@"靴を脱ぐ"},@{@"key":@"手洗い"},@{@"key":@"挨拶"},@{@"key":@"洗濯機に制服投入"},@{@"key":@"ハロ君に夕飯"}],@[@{@"key":@"絵本選ぶ"},@{@"key":@"歯磨き"},@{@"key":@"夜トイレ"},@{@"key":@"連絡帳確認"},@{@"key":@"twitter"}]];
-//    NSLog(@"[arr objectAtIndex:] %@",[[arr objectAtIndex:indexPath.section] objectAtIndex:indexPath.row]);
-//    cell.info = [arr objectAtIndex:indexPath.row];
+    NSArray *arr = @[@[@{@"key":@"着替え"},@{@"key":@"歯磨き"},@{@"key":@"トイレ"},@{@"key":@"朝ごはん"},@{@"key":@"虫除けスプレー"}],@[@{@"key":@"靴を脱ぐ"},@{@"key":@"手洗い"},@{@"key":@"挨拶"},@{@"key":@"洗濯機に制服投入"},@{@"key":@"ハロ君に夕飯"}],@[@{@"key":@"絵本選ぶ"},@{@"key":@"歯磨き"},@{@"key":@"トイレ"},@{@"key":@"連絡帳確認"},@{@"key":@"twitter"}]];
     cell.HeaderLabel.text =  [[arr objectAtIndex:indexPath.section] objectAtIndex:indexPath.row][@"key"];
-    // Configure the cell...
+    cell.delegate = self;
     
-    [cell.AddBtn addTarget:self action:@selector(prepareActionAdd:) forControlEvents:UIControlEventTouchUpInside];
-    [cell.DeleteBtn addTarget:self action:@selector(prepareActionDelete:) forControlEvents:UIControlEventTouchUpInside];
+
+//    NSMutableDictionary *imageDic =
+//    @{@"着替え":@"kigaeGirl.png",
+//      @"歯磨き":@"family_hamigaki_shiage.png",
+//      @"トイレ":@"toiletKid.png",
+//      @"朝ごはん":@"food_gohan.png",
+//      @"虫除けスプレー":@"mushiyoke.png",
+//      @"靴を脱ぐ":@"kutsu_nugu_good.png",
+//      @"手洗い":@"tearai_hand_suidou.png",
+//      @"挨拶":@"ojigi_girl.png",
+//      @"洗濯機に制服投入":@"sentaku_kago.png",
+//      @"ハロ君に夕飯":@"pet_oyatsu_dog.png",
+//      @"連絡帳確認":@"book_renrakuchou.png",
+//      @"twitter":@"bluebird_baka.png",
+//      @"絵本選ぶ":@"ehon_hahako.png"
+//      };
+    
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary* imageDic = [defaults dictionaryForKey:@"imageDic"];
+    
+    [cell.cellTaskImage setImage: [UIImage imageNamed:[imageDic objectForKey:cell.HeaderLabel.text]]];
+    cell.cellTaskImage.contentMode = UIViewContentModeScaleAspectFit;
     
     return cell;
 }
-
-- (void)prepareActionAdd:(UIButton*)sender{
-    
+// LoginServiceDelegateを実装します
+#pragma mark - DetailCellDelegate
+-(void)addPrepareActionForList:(UITableViewCell*)detailCell :(BOOL)isAdd{
+    if (detailCell) {
+        NSLog(@"indexPath = %@", [self.tableView indexPathForCell:detailCell]);
+    }
+    TaskListDetailTableViewCell *cell = [self.tableView cellForRowAtIndexPath:[self.tableView indexPathForCell:detailCell]];
+    if (isAdd) {
+        [self.prepareActionArry addObject:cell.HeaderLabel.text];
+    }else{
+        NSMutableArray *discards = [NSMutableArray array];
+        for (NSString *n in self.prepareActionArry) {
+            if ([n isEqualToString:(NSString *)cell.HeaderLabel.text]) {
+                [discards addObject:n];
+            }
+        }
+        [self.prepareActionArry removeObjectsInArray:discards];
+    }
+    for (NSString *n in self.prepareActionArry) {
+        NSLog(@"self.prepareActionArry %@",n);
+    }
 }
-- (void)prepareActionDelete:(UIButton*)sender{
-    //画面遷移用に使う
-        ViewController *vc = [[ViewController alloc] init];
-    vc.prepareAction =self.prepareActionArry;
-        [self presentViewController:vc animated:YES completion:nil];
+
+- (void)editPrepareActionForList:(UITableViewCell *)detailCell{
+    if (detailCell) {
+        NSLog(@"indexPath.row = %ld", [self.tableView indexPathForCell:detailCell].row);
+    }
+//    TaskListDetailTableViewCell *cell = [self.tableView cellForRowAtIndexPath:[self.tableView indexPathForCell:detailCell]];
+    /*タスクの詳細編集画面へ遷移する*/
+        addOriginalTaskViewController *artvc = [[addOriginalTaskViewController alloc] init];
+        artvc.fromView = 2;
+        artvc.fromViewIndexPath = [self.tableView indexPathForCell:detailCell];
+        artvc.delegate = self;
+        [self presentViewController:artvc animated:YES completion:nil];
+}
+
+-(void)updateTaskDetailActin:(NSString*)str img:(UIImage*)img indexPath:(NSIndexPath*)indexPath{
+    NSLog(@"%@ %@ %@",str,img,indexPath);
+    TaskListDetailTableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     
+    NSMutableArray *discards = [NSMutableArray array];
+    for (NSString *n in self.prepareActionArry) {
+        if ([n isEqualToString:(NSString *)cell.HeaderLabel.text]) {
+            [discards addObject:n];
+        }
+    }
+    [self.prepareActionArry removeObjectsInArray:discards];
+    
+    [cell.cellTaskImage setImage:img];
+    cell.cellTaskImage.contentMode = UIViewContentModeScaleAspectFit;
+    cell.HeaderLabel.text = str;
+    NSLog(@"文字列をアップデートして配列に追加する %@",cell.HeaderLabel.text);
+    [self.prepareActionArry addObject:cell.HeaderLabel.text];
+}
+
+- (void)touchTaskStartBtn:(UIButton*)sender{
+    //画面遷移用に使う
+    ViewController *vc = [[ViewController alloc] init];
+    vc.prepareAction =self.prepareActionArry;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 /*
 // Override to support conditional editing of the table view.
@@ -123,21 +206,7 @@
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
  */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    
-    // 選択されたセルを取得
-//TaskListDetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
     TaskListDetailTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    
-//    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-//    NSLog(@"%@", cell.textLabel.text);
-    
-//    let cell = tableView.cellForRow(at: indexPath)
-//    let indicator = cell?.contentView.viewWithTag(1) as! UIActivityIndicatorView
-//    indicator.startAnimating()
-//    NSLog(@"%@",cell.HeaderLabel.text);
     [self.prepareActionArry addObject:cell.HeaderLabel.text];
 }
 
@@ -150,5 +219,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end
